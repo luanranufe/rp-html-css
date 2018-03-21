@@ -1,0 +1,254 @@
+/*Style RocketPass*/
+body{
+    background-color: #f4f4f4;
+    margin: 0px;
+    
+}
+::selection{
+    color: white;
+    background: #ff94c4;
+}
+::-moz-selection{
+    color: white;
+    background: #ff94c4;
+}
+
+
+/******  BARRA DE MENU  ******/
+
+.nav-header-mobile{
+    display: none;
+}
+.main-header{
+    width: 100%;
+    height: 61px;
+    border: 0px solid black;
+    background-color: white;
+    position: absolute;
+}
+
+.logo-header{
+    width: auto;
+    height: 100%;
+    float: left;
+    border-right: 0px solid #eaeaea;
+}
+
+.logo-header img{
+    vertical-align: middle;
+    height: 61px
+}
+
+.space-header{
+    float: left;
+    width: ;
+}
+
+.nav-header{
+    display: table-cell;
+    float: right;
+    /*border: 1px solid red;/*<--- BORDA DE TESTE*/
+    height: 61px;
+    vertical-align: none;
+}
+
+.nav-header-itens div{
+    position: relative;
+    display: table;
+    float: left;
+    margin-right: 0px;
+    margin-left: 0px;
+    height: 61px;
+    /*border: 1px dashed purple;/*<--- BORDA DE TESTE*/
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: none;
+}
+
+.nav-header-itens span{
+    font-family: Verdana;
+    font-size: 0.8em;
+    margin-right: 10px;
+    margin-left: 14px;
+    height: auto;
+    /*border: 0px dashed yellow;/*<--- BORDA DE TESTE*/
+    vertical-align: none;
+    line-height: 60px;
+}
+
+.nav-item-account{
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    height: 61px;
+    position: relative;
+    vertical-align: none;
+}
+
+.nav-item-account img{
+    position: relative;
+    top: 12px;
+    display: none;/*VOLTAR ICONES DA BARRA DE MENU - NAV*/
+}
+
+.nav-item-dashboard{
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 20px;
+    background-color: #3b3b3b;
+
+}
+.nav-item-dashboard img{
+    position: relative;
+    top: 2px;
+    display: none; /*VOLTAR ICONES DA BARRA DE MENU - NAV*/
+}
+
+.nav-item-create{
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 20px;
+    background-color: #EC4EA1;
+}
+
+
+
+/******  MENU MOBILE  ******/
+
+@media screen and (max-width: 800px) {
+    .nav-header{
+        display: none;
+    }
+    
+    .nav-header-mobile{
+        display: block;
+        height: 61px;
+        float: right;
+        position: relative;
+        top: 12px;
+        padding-right: 15px;
+    }
+    
+    .nav-header-mobile img{
+        height: 32px
+    }
+}/*FIM MENU MOBILE*/
+
+.element-separator{
+    clear: both;
+    width: 100%;
+    height: 60px;
+   /* border: 2px dashed darkblue;/*<--- BORDA DE TESTE*/ 
+}
+
+/******  BANNER SLIDER DO TOPO  ******/
+
+.banner-slider-container{
+    width: 100%;
+    height: 30vw;
+    max-height: 400px;
+    /*border: 2px dashed lightblue;/*<--- BORDA DE TESTE*/   
+}
+
+.banner-slider-slides{
+    width: 100%;
+    height: 30vw;
+    /*border: 2px dashed silver;/*<--- BORDA DE TESTE*/
+    background-color: none;
+    background-image: url('../img/slides/slide-2.png');
+    background-size: cover;
+    
+}/*FIM BANNER SLIDER TOPO*/
+
+
+
+/******  BARRA DE PESQUISA  ******/
+
+.banner-search-container{
+    vertical-align: bottom;
+    /*border: 2px dashed silver;/*<--- BORDA DE TESTE*/
+    padding-top: 18%;
+}
+
+.banner-search-box{
+    display: block;
+    vertical-align: baseline;
+    background-color: white;
+    border-radius: 16px;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 430px;
+    width: 80%;
+    height: 17vw;
+    box-shadow:0px 6px 0px #6c6c6c; 
+    /*border: 2px dashed purple;/*<--- BORDA DE TESTE*/
+}
+
+.banner-search-form{
+    display: block;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.banner-search-form input{
+    border: 0px;
+    border-bottom: 2px solid #FF5CA5;
+    margin-left: 10px;
+    margin-right: 13px;
+    text-align: center;
+    padding: 7px;
+    font-family: Verdana;
+    color: #898989;
+}
+
+.banner-search-form input[type="date"]{ /*<--CAMPO DATA ESCONDIDO */
+    display: none;
+}
+
+.banner-search-form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 0px;
+    border-bottom: 2px solid #ef5ea2;
+    margin-left: 10px;
+    margin-right: 13px;
+    text-align: center;
+    padding: 7px;
+    font-family: Verdana;
+    color: #898989;
+    overflow: hidden;
+    background: url('../img/icon-select-arrow.png') no-repeat right #fff;
+
+}
+
+select:focus > option:checked { 
+    background: #FF5CA5 !important;
+    color: white;
+}
+
+select option:checked,
+select option:hover {
+    box-shadow: 0 0 10px 100px #FF5CA5 inset;
+    color: white;
+    cursor:pointer;
+}
+
+.banner-search-form input[type="button"]{
+    border: 0px;
+    background-color: #ef5ea2;
+    color: white;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
